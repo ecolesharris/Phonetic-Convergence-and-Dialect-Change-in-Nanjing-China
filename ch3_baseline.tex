@@ -1,0 +1,75 @@
+\chapter{Differences between the dialects}
+\label{baselinechapter}
+Here I will discuss the analyses of and results from the baseline blocks of the experiment. I'm going to talk about how the dialects differ in terms of the acoustic and distributional features of each of the variables of interest. I'll also include a description of the acoustic and distributional qualities of the variables that participants were exposed to via the recording of the PTH shadowing model.
+
+Rebecca thinks that the argument here is going to be "This is where ND is and that is/isn't what we'd expect given patterns of change understood to be goin' on in the city."
+
+\section{Dialect Baselines}
+\label{sec:baselines}
+
+Here, I'm going to talk about the overall qualities of each dialect (as measured across all speakers), as well as the the qualities of the PTH shadowing model that the participants listened to during the shadowing portion of the experiment. %Hold on to your butts!
+
+I expected VOT to not be different, cuz I had no citations that said it would be... But it was.
+
+I expected midpoint A1-P0 to be higher in Mandarin than Nanjing dialect cuz Nanjing dialect should basically just have nasal vowels cuz they like don't do nasal codas \hl{(CITATION)}.
+
+I expected midpoint F3 to be lower in Mandain than in Nanjing dialect cuz Nanjing dialect's not supposed to round their [y] \hl{(CITATION)}
+
+I expected trajectory length of \textipa{[iE]} diphthongs to be longer in Mandarin than in Nanjing Dialect cuz \hl{CITATION} said so.
+
+I expected F2 to be lower in Mandarin than in Nanjing Dialect cuz Nanjingers are supposed to produce at least some [l]'s \citep{bao1980sixty} where idealized Mandarin speakers are only supposed to produce [n].
+
+\begin{table}
+\centering
+ \begin{tabular}{|c||c|c|c|c|c|c|} 
+ \hline
+ & ND & * & Model & * & PTH & Interdialect *\\ [0.5ex] 
+ \hline\hline
+ VOT duration (ms) & 83 & *** & 184 & *** & 93 & ***\\ 
+ \hline
+ Nasal Coda Presence (\%) & 5.8 & ??? & 100 & ??? & 39.2 & ***\\ 
+% \hline
+% Min A1-P0 reached (tp) & ? & ? & 5(?) & ? & ? & ?\\%here, I should figure out a way to tell when the peak of nasality (lowest a1-p0) happens. I'd predict that Mandarin would have it happen later, and that's what the boxplots look like when I do all four blocks in the format boxplot(NASdf$a1p0[NASdf$block==1]~NASdf$timepoint[NASdf$block==1],ylim = c(-25,20)). For comparison, I can look at boxplot(Annie_NAS$a1p0~Annie_NAS$timepoint), where it looks like the peak is RIGHT at the end.
+ %\hline
+ %Mean non-zero nasal coda duration (ms) & 67 & 85 & 161\\
+ \hline
+ [l]/[n] F2 (Hz) & 1726.445 & \multicolumn{3}{|c|}{\multirow{3}{*}{N/A}} & 1773.476 & *\\
+ \cline{1-2} \cline{6-7}
+ [i]/[y] F3 (Hz) & 2597 & \multicolumn{3}{|c|}{} & 2557 & ***\\
+ \cline{1-2} \cline{6-7}
+ [e]/\textipa{[iE]} traj. (Hz) & 666.5882 & \multicolumn{3}{|c|}{} & 895.2823 & ***\\
+ \hline
+\end{tabular}
+\caption{Baseline values for the five variables for each dialect (plus the shadowing model)}
+\label{table:baselinetab}
+\end{table}
+
+\subsection{The PTH Shadowing Model}
+\label{ssec:baselines:model}
+
+The participants listened to a recording of a female PTH speaker reading the extended [p\super{h}] words and the [\~{\ae}]/[\ae n] words. The model speaker had the following qualities:
+
+The VOTs of the manipulated [p\super{h}] stimuli had a mean duration of 184 ms (N = 30, SD = 37). The shortest of these VOTs was 44 ms (which--if it weren't doubled--would have been in the bottom 35 tokens for the entire data set... it's super short). The specific word where this happened was the ``pei'' of ``pipei.'' The longest--``shangpin''--was 230 ms. If this had been part of the participant dataset, it would have been the 7th longest token. \hl{I need to put A1-P0 stuff here}.%As mentioned in the methodology chapter, nasal codas were present in 100\% of the model speaker's pronunciations of the [\~{\ae}]/[\ae n] words. The average duration of those nasal codas was 161 ms, with a standard deviation of 43 ms. The longest nasal coda was 230 ms, and the shortest was 57 ms.
+
+See the "production list" section of chapter \ref{methodchapter} (beginning on pg. \pageref{para:prodList}) for details on how the stimuli were created.
+
+A Welch two sample, two-tailed t-test was conducted to compare the duration of the manipulated model VOTs and participant baseline PTH VOTs. There was a significant difference in the VOTs of the model (M = 184 ms, SD = 37 ms) and the participants (M = 93 ms, SD = 25 ms); t(29.918) = 13.322, p = 4.108e-14.
+
+The effect of the presence (or absence) of nasal codas was measured in a number of ways. First, all tokens were judged impressionistically as either having or not having a nasal coda. of the more present nasal codas, and longer nasal codas (even if you're only looking at the present ones).
+
+
+\section{Implicit Association Task Results}
+\label{sec:IATresults}
+
+\section{The effect of Main Predictors on Baseline Mandarinization}
+\label{sec:basemandfactors}
+So basically, It's a little hard to stitch a story together here, cuz the different variables seemed to behave kinda differently. 
+\subsection{Important take-aways from the baseline values}
+
+The dialects are different in the real world (and, awesomely, they're different in ALL of the ways I'm looking at in this dissertation)! This is important because if they weren't it would be impossible for one to influence the other, either in the real world or in this experiment.
+
+The model is also super different from either of the dialects, which is important because it gives people the phonetic room they need to accommodate/converge/imitate.
+
+\section{Mandarinization}
+
+I looked at how PTH-like each speaker's baseline ND was to get an idea of how much they participate in the real-world sound change that's going on in Nanjing. I calculated a Mandarinization score for each ND baseline token of each variable by subtracting the token's measurement from the mean mean PTH baseline value across all speakers.

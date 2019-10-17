@@ -1,0 +1,110 @@
+\documentclass[defaultstyle,11pt]{thesis}
+
+\usepackage{amssymb}		% to get all AMS symbols
+\usepackage{graphicx}		% to insert figures
+\usepackage{hyperref}		% PDF hyperreferences??
+\usepackage{tipa}
+\usepackage{natbib}
+\usepackage{newunicodechar}
+\usepackage{color,soul}
+\usepackage{multirow}
+\usepackage{pdfpages}
+\usepackage[table]{xcolor}
+
+\newunicodechar{￥}{\textyen}
+\DeclareTextCommandDefault{\textyen}{%
+  \vphantom{Y}%
+  {\ooalign{Y\cr\hidewidth\yenbars\hidewidth\cr}}%
+}
+
+\newcommand{\yenbars}{%
+  \vbox{
+     \hrule height.1ex width.4em
+     \kern.15ex
+     \hrule height.1ex width.4em
+     \kern.3ex
+  }%
+}
+
+\newcommand*\mean[1]{\bar{#1}}
+
+\newcommand{\IRL}{in the real world}
+\newcommand{\degdip}{degree of diphthongization}
+%%%%%%%%%%%%   All the preamble material:   %%%%%%%%%%%%
+
+\title{Phonetic Convergence and Dialect Change in Nanjing, China}
+
+\author{Evan Hugh}{Coles-Harris}
+
+\otherdegrees{B.A., Macalester College, 2010 \\
+	      M.A., University of Colorado, 2015}
+
+\degree{Doctor of Philosophy}		%  #1 {long descr.}
+	{Ph.D., Linguistics}		%  #2 {short descr.}
+
+\dept{Department of}			%  #1 {designation}
+	{Linguistics}		%  #2 {name}
+
+\advisor{Prof.}				%  #1 {title}
+	{Rebecca Scarborough}			%  #2 {name}
+
+\reader{Prof.~Kira Hall}		%  2nd person to sign thesis
+\readerThree{Prof.~Bhuvana Narasimhan}		%  3rd person to sign thesis
+\readerFour{Prof.~Chase Raymond}
+\readerFive{Prof.~Esther Brown}
+
+
+\abstract{  \OnePageChapter	% because it is very short
+
+	Often the abstract will be long enough to require
+	more than one page, in which case the macro
+	``$\backslash$OnePageChapter'' should {\it not}
+	be used.
+
+	But this one isn't, so it should.
+	}
+
+\dedication[Dedication]{	% NEVER use \OnePageChapter here.
+	To all of the fluffy kitties.
+	}
+
+\acknowledgements{	\OnePageChapter	% *MUST* BE ONLY ONE PAGE!
+	Many thanks to my dissertation committee and some other people (Gu Laoshi, Calley Peirce, Tim O'Gorman, more). Also, to the United States Department of State, who generously funded this research with a Fulbright U.S. Student Research Grant (grant no.: XXXXX) during the 2016-2017 academic year.
+	}
+
+\IRBprotocol{16-0775}	% optional!
+
+\ToCisShort	% use this only for 1-page Table of Contents
+
+\LoFisShort	% use this only for 1-page Table of Figures
+% \emptyLoF	% use this if there is no List of Figures
+
+\LoTisShort	% use this only for 1-page Table of Tables
+% \emptyLoT	% use this if there is no List of Tables
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%       BEGIN DOCUMENT...         %%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+\input macros.tex
+\input ch1_intro.tex
+\input ch2_methodology.tex
+\input ch3_baseline.tex
+\input ch4_shadowing.tex
+\input ch5_microcosm.tex
+\input ch6_discussion.tex
+
+%%%%%%%%%   then the Bibliography, if any   %%%%%%%%%
+\bibliographystyle{apalike}	% or "siam", or "alpha", etc. Default of "plain"
+\nocite{*}		% list all refs in database, cited or not
+\bibliography{dissrefs}		% Bib database in "dissrefs.bib"
+
+%%%%%%%%%   then the Appendices, if any   %%%%%%%%%
+\appendix
+\input appendixA.tex
+\input appendixB.tex
+
+
+\end{document}
