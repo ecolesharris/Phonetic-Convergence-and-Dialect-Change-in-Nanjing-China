@@ -235,7 +235,6 @@
 	\protect\th@ChapterStyle
 	\protect\th@DoChapCenter #1}
 
-
 %%%%%%% DEFINE DOUBLE-SPACING (THE DEFAULT) AND OTHER SPACING:
 \def\setspace@size{\ifx\@currsize\normalsize\@normalsize\else\@currsize\fi}
 \def\doublespacing{ \ifcase \@ptsize \relax
